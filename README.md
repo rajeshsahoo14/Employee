@@ -1,103 +1,90 @@
-🎉 Employee Birthday & Anniversary Email Automation
+# 🎉 Employee Birthday & Anniversary Email Automation  
 
-This project is a Node.js + MongoDB based automation script that sends personalized Birthday 🎂 and Work Anniversary 🎉 greetings to employees via Gmail (Nodemailer).
+![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)  
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
+![Nodemailer](https://img.shields.io/badge/Nodemailer-0078D4?style=for-the-badge&logo=gmail&logoColor=white)  
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)  
 
-📂 Project Structure
-.
-├── anniversaryCheck.js   # Main script to check & send emails
-├── empData.js            # Seeder script to insert sample employees
-├── db.js                 # MongoDB connection & Employee model
-├── .env                  # Environment variables (not uploaded to GitHub)
-├── .gitignore            # Ignored files (node_modules, .env, etc.)
+An automated system built with **Node.js + MongoDB + Nodemailer** that sends personalized **Birthday 🎂** and **Work Anniversary 🎉** greetings to employees via Gmail.  
+
+---
+
+## ✨ Features
+- ✅ Automatically detects birthdays & anniversaries from database  
+- ✅ Sends personalized greeting emails  
+- ✅ Uses **Nodemailer + Gmail App Password**  
+- ✅ MongoDB for storing employee records  
+- ✅ Seeder script to insert sample employees  
+- ✅ Logs success & failure for each email  
+- ⏰ Can be scheduled with **cron jobs** for daily automation  
+
+---
+
+## 📂 Project Structure
+├── anniversaryCheck.js # Main script to check & send emails
+├── empData.js # Seeder script to insert sample employees
+├── db.js # MongoDB connection & Employee model
+├── .env # Environment variables (ignored in GitHub)
+├── .gitignore # Ignore sensitive files & node_modules
 ├── package.json
 
-⚙️ Features
 
-✅ Automatically checks today’s date against employee records.
+---
 
-✅ Sends Birthday Emails 🎂.
+## 🛠️ Tech Stack
+- **Backend:** Node.js  
+- **Database:** MongoDB (via Mongoose)  
+- **Email Service:** Nodemailer (Gmail SMTP)  
+- **Config:** dotenv  
 
-✅ Sends Work Anniversary Emails 🎉.
+---
 
-✅ Uses Gmail + Nodemailer with secure App Password.
+## 🚀 Setup & Installation
 
-✅ MongoDB for employee data storage.
-
-✅ Seeder script to insert sample employees.
-
-✅ Logs success or failure for each email.
-
-🛠️ Tech Stack
-
-Node.js (backend runtime)
-
-Express.js (optional, if extended to API)
-
-MongoDB + Mongoose (database)
-
-Nodemailer (email service)
-
-dotenv (environment config)
-
-🚀 Setup & Installation
-
-Clone Repo
-
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-
-
-Install Dependencies
+1. **Clone Repository**
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+2.Install Dependencies
 
 npm install
 
 
-Setup .env
-Create a .env file in root:
+3.Setup .env
 
 EMAIL_USER=your-email@gmail.com
-EMAIL_PASS=your-gmail-app-password
+EMAIL_PASS=your-app-password
 MONGO_URI=mongodb://localhost:27017/companyDB
 
 
-⚠️ Use a Gmail App Password, not your real Gmail password.
+⚠️ Make sure to use a Gmail App Password (not your normal Gmail password).
 
-Seed Sample Data
+4.Seed Sample Data
 
 node empData.js
 
 
-Run Script
+5.Run Script
 
 node anniversaryCheck.js
 
-⏰ Optional: Run Daily with Cron
 
-You can automate this script using node-cron:
-
-const cron = require("node-cron");
-cron.schedule("0 9 * * *", () => {
-  sendEmails(); // Runs every day at 9 AM
-});
-
-📧 Email Preview
+📧 Example Email
 
 Subject (Birthday): 🎂 Happy Birthday!
-
 Subject (Anniversary): 🎉 Happy Work Anniversary!
-
-Example:
 
 Dear Rajesh Kumar,
 
 Wishing you a very Happy Birthday!
 
-Best Regards,
+Best Regards,  
 Team
 
 🤝 Contributing
 
-Feel free to fork and improve this project. PRs are welcome!
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit a PR.
 
 📜 License
 
