@@ -11,7 +11,7 @@ An automated system built with **Node.js + MongoDB + Nodemailer** that sends per
 
 ## ✨ Features
 - ✅ Automatically detects birthdays & anniversaries from database  
-- ✅ Sends personalized greeting emails  
+- ✅ Sends personalized greeting emails   
 - ✅ Uses **Nodemailer + Gmail App Password**  
 - ✅ MongoDB for storing employee records  
 - ✅ Seeder script to insert sample employees  
