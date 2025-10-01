@@ -1,9 +1,5 @@
 # 🎉 Employee Birthday & Anniversary Email Automation  
 
-![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)  
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)  
-![Nodemailer](https://img.shields.io/badge/Nodemailer-0078D4?style=for-the-badge&logo=gmail&logoColor=white)  
-![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)  
  
 An automated system built with **Node.js + MongoDB + Nodemailer** that sends personalized **Birthday 🎂** and **Work Anniversary 🎉** greetings to employees via Gmail.  
 
