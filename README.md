@@ -48,8 +48,8 @@ npm install
 
 3.Setup .env
 
-EMAIL_USER=your-email@gmail.com
-EMAIL_PASS=your-app-password
+EMAIL_USER=your-email@gmail.com //Here use any of you email
+EMAIL_PASS=your-app-password // generate a 16-character App Password from your Google Account by enabling 2-Step Verification, navigating to the App Passwords section, selecting "Mail" as the app, choosing a custom name (like "Nodemailer"), and then using this generated password in your Nodemailer transport configuration, not your regular Gmail password. 
 MONGO_URI=mongodb://localhost:27017/companyDB
 
 
